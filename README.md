@@ -15,7 +15,7 @@ Key Features
 
   * Safe shutdown with GPIO cleanup
 
-Hardware Requirements
+Hardware Requirements:
   *  Raspberry Pi (any model with GPIO support)
 
   * DHT11 temperature & humidity sensor
@@ -24,5 +24,22 @@ Hardware Requirements
 
   * SD card with Raspberry Pi OS (32-bit Bullseye legacy preferred)
 
-Contributors
-  * 
+System Architecture:
+ * Components:
+  
+  * Raspberry Pi – main controller and processing unit
+
+  * DHT11 – digital sensor for temperature & humidity
+
+  * Python Scripts – handles data capture, GUI, logging
+
+  * CSV File – stores timestamped readings for analysis
+
+How It Works: 
+ * The DHT11 sensor reads temperature and humidity every second.
+
+ * Readings are validated, displayed on the GUI, and saved with timestamps in s_results.csv.
+
+ * A separate thread handles the sensor reading, keeping the GUI responsive.
+
+ * When the application exits, all threads are safely terminated and GPIO pins are reset.
