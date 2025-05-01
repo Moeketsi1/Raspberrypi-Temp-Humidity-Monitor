@@ -45,5 +45,5 @@ How It Works:
  * When the application exits, all threads are safely terminated and GPIO pins are reset.
 
 Contributors:
-Moeketsi Khonkhe
-Bushra Kazi
+ * Moeketsi Khonkhe
+ * Bushra Kazi
