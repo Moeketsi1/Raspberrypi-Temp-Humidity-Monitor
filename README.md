@@ -43,3 +43,7 @@ How It Works:
  * A separate thread handles the sensor reading, keeping the GUI responsive.
 
  * When the application exits, all threads are safely terminated and GPIO pins are reset.
+
+Contributors:
+Moeketsi Khonkhe
+Bushra Kazi
